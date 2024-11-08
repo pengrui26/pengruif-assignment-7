@@ -296,7 +296,7 @@ def confidence_interval():
 
     plt.hlines(0, ci_lower, ci_upper, color='blue', linewidth=3, label=f'{confidence_level}% Confidence Interval')
 
-    if includes_true:
+    if includes_true == 'Yes':
         plt.axvline(true_param, color='green', linestyle='--', linewidth=2, label='True Slope')
     else:
         plt.axvline(true_param, color='red', linestyle='--', linewidth=2, label='True Slope')
